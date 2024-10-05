@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <!--Enabled the scalability property in the code -->
 	<title>Before - Accessible University Demo Site - Inaccessible Version</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -25,12 +26,16 @@
       <nav aria-label="version" class="float-right">
         <span class="float-left">Examples:</span>
         <ul class="utility-menu float-left list-unstyled">
-          <li><a href="before_u.html" aria-current="page" aria-label="before version with problems">Before</a></li>
+          <a href="before_u.html" aria-current="page" aria-label="before version with problems" style="opacity: 1; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+            Before
+        </a> 
+        <!--added css to change the contrast-->
+        
           <li><a href="after_u.html" aria-label="after version with fixes">After</a></li>
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
+        <img id="logo" alt="" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
       </a>
     </div>
 
@@ -144,7 +149,9 @@
               </p>
 
               <div class="heading">Can you spot the barriers?</div>
-              <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg"/> There are at least 18 accessibility issues on this page.
+              <p><img style="float: left; max-width: 200px; margin-right: 10px;" alt="this is an image of a road sign indicating the closure of a road" src="images/8675309-block.jpg"> 
+                <!--Added alternative text to image -->
+                There are at least 18 accessibility issues on this page.
                 To see a list of all known issues, <a href="issues.html">click here</a>.
                 To see a more accessible version of this same page, <a href="after_u.html">click here</a>.
                 To view a popup list of accessibility issues:</p>
@@ -224,8 +231,8 @@
             <section class="mb-3">
 
               <div class="events box">
-                <div class="heading">Events</div>
-
+                <h2>Events</h2>
+                <!--styled events as a heading-->
                 <h6>December 1</h6>
                 <h5><a href="#">A great holiday event</a></h4>
 
@@ -298,8 +305,12 @@
             <li><a href="https://twitter.com"><img src="images/8675309-social-twitter.png" alt="TW"></a</li>
           </ul>
           <ul class="list-unstyled">
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Directions</a></li>
+            <li><a href="#">
+              Contact Us
+            </a></li>
+            <li><a href="#">
+              Directions
+            </a></li>
           </ul>
           <hr>
         </div>
@@ -307,9 +318,16 @@
           <div id="ccLogo">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
           </div>
-          Accessible University by <a href="http://washington.edu/accesscomputing/AU">University of Washington</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-          <p>This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and has been subsequently updated and maintained with support from the National Science Foundation (grant #CNS-054061S). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement.</p>
-          <p>Subsequent modifications to this instance have been made by Duke University to modernize the look, feel, and code.</p>
+          Accessible University by <a href="http://washington.edu/accesscomputing/AU" style="color: #00698f; text-decoration: underline;">University of Washington</a>
+          is licensed under a 
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/ " style="color: #00698f; text-decoration: underline;">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+          <!--Made links distinguishable without relying on color-->
+          <p>
+            This product was originally developed with support from the National Institute on Disability and Rehabilitation Research of the U.S. Department of Education (grant #H133D010306), and has been subsequently updated and maintained with support from the National Science Foundation (grant #CNS-054061S). The contents do not necessarily represent the policies of the U.S. federal government, and you should not assume their endorsement.
+          </p>
+          <p>
+            Subsequent modifications to this instance have been made by Duke University to modernize the look, feel, and code.
+          </p>
         </div>
       </div>
     </div>
