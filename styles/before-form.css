@@ -13,9 +13,13 @@
 #appForm p.reqExample {
   margin-top: 0.15em;
 }
-div#majors {
+#majors {
   width: 10em;
+  float: left;
+  margin-top:5px;
+  margin-right: 5px;
 }
+
 
 /*
  *
