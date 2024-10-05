@@ -15,14 +15,6 @@
 }
 div#majors {
   width: 10em;
-  li input[type="checkbox"] {
-    margin-right: 10px; /* add some space between the checkbox and label */
-  }
-  
-  li input[type="checkbox"]:focus {
-    box-shadow: 0 0 0 2px #ccc; /* add a highlight effect on focus */
-    outline: none;
-  }
 }
 
 /*
